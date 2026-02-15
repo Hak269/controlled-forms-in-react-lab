@@ -38,9 +38,9 @@ function Bookshelf() {
         <h3>Add a Book</h3>
         <form onSubmit={handleSubmit}>
             <label htmlFor="title">Title: </label>
-            <input onChange={handleInputChange} type="text" id='title' name='title'/>
+            <input value={newBook.title} onChange={handleInputChange} type="text" id='title' name='title'/>
             <label htmlFor="author">Author: </label>
-            <input onChange={handleInputChange} type="text" id='author' name='author'/>
+            <input value={newBook.author}onChange={handleInputChange} type="text" id='author' name='author'/>
             <button>Add Book</button>
         </form>
     </div>
